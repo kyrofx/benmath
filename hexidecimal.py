@@ -15,11 +15,11 @@ def hexEncode(base, integer):
     multiplication=1
     cycles = 0
     while cycles == 0 or multiplication >= 1:
-        if basemultiplication >= integer:
+        if base*multiplication >= integer:
             output = output + (str(a[integer // (multiplication)]))
             integer -= (multiplication * (integer // multiplication))
             multiplication /= base
-        if basemultiplication <integer:
+        if base*multiplication <integer:
             multiplication=base
         #print(str(multiplication) + ' / ' + str(integer) + ' / ' + str(output))
         cycles+=1
