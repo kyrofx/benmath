@@ -29,16 +29,16 @@ def hexEncode(base, integer):
     return str(output)
 
 found=0
-for hexBase in range(2, 36):
+for base in range(2, 36):
     for i in range(1000000000):
-        squared = hexEncode(hexBase, i*i)
+        squared = hexEncode(base, i*i)
         if len(squared)%2==0:
             initial = squared[:(len(squared)//2)]
             final = squared[(len(squared)//2):]
             if initial == final:
-                if hexDecode(hexBase, squared) == i*i:
+                if hexDecode(base, squared) == i*i:
                     found+=1
-                    print(str(hexBase) + ' / ' + str(i) + ' / ' + str(i*i) + ' / '+ str(squared))
+                    print(str(base) + ' / ' + str(i) + ' / ' + str(i*i) + ' / '+ str(squared))
 now = datetime.now()
 dt_string = now.strftime("%d/%m/%Y %H:%M:%S")
 print("Finished at", dt_string)
