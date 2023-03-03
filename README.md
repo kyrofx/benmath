@@ -1,5 +1,5 @@
 # FUCKBEN
-A python script that uses hexadecimals to go up to base 30+
+A python script that uses hexadecimals to go up to base 35
 ### Made to solve a funny math problem: </br>
 To get the echo of a positive integer, we write it twice in a row without a space. </br>
 For example, the echo of 2023 is 20232023. Is there a positive integer whose echo is a perfect square? </br>
