@@ -1,4 +1,4 @@
-# FUCKBEN
+# BENMATH
 A python script that uses hexadecimals to go up to base 35
 ### Made to solve a funny math problem: </br>
 To get the echo of a positive integer, we write it twice in a row without a space. </br>
